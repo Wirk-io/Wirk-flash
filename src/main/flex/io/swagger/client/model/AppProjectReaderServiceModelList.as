@@ -1,7 +1,6 @@
 package io.swagger.client.model {
 
 import io.swagger.common.ListWrapper;
-import io.swagger.client.model.QualityReaderServiceModel;
 
     public class AppProjectReaderServiceModelList implements ListWrapper {
         // This declaration below of _AppProjectReaderServiceModel_obj_class is to force flash compiler to include this class

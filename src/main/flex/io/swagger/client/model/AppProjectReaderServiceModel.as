@@ -1,6 +1,5 @@
 package io.swagger.client.model {
 
-import io.swagger.client.model.QualityReaderServiceModel;
 
     [XmlRootNode(name="AppProjectReaderServiceModel")]
     public class AppProjectReaderServiceModel {
@@ -15,7 +14,7 @@ import io.swagger.client.model.QualityReaderServiceModel;
         
         [XmlElement(name="AppProjectState")]
         
-        public var appProjectState: Number = 0;
+        public var appProjectState: String = null;
     
         
         
@@ -28,18 +27,6 @@ import io.swagger.client.model.QualityReaderServiceModel;
         [XmlElement(name="Credit")]
         
         public var credit: Number = 0;
-    
-        
-        
-        [XmlElement(name="HasInstruction")]
-        
-        public var hasInstruction: Boolean = false;
-    
-        
-        
-        [XmlElement(name="HasQuestionOptions")]
-        
-        public var hasQuestionOptions: Boolean = false;
     
         
         
@@ -79,16 +66,6 @@ import io.swagger.client.model.QualityReaderServiceModel;
     
         
         
-        // This declaration below of _qualities_obj_class is to force flash compiler to include this class
-        private var _qualities_obj_class: Array = null;
-        [XmlElementWrapper(name="Qualities")]
-        [XmlElements(name="qualities", type="Array")]
-        
-        
-        public var qualities: Array = new Array();
-    
-        
-        
         [XmlElement(name="QualityName")]
         
         public var qualityName: String = null;
@@ -111,12 +88,6 @@ import io.swagger.client.model.QualityReaderServiceModel;
     
         
         
-        [XmlElement(name="TitleQuestionOptions")]
-        
-        public var titleQuestionOptions: String = null;
-    
-        
-        
         [XmlElement(name="UrlNotification")]
         
         public var urlNotification: String = null;
@@ -133,10 +104,6 @@ import io.swagger.client.model.QualityReaderServiceModel;
         
         str += " (credit: " + credit + ")";
         
-        str += " (hasInstruction: " + hasInstruction + ")";
-        
-        str += " (hasQuestionOptions: " + hasQuestionOptions + ")";
-        
         str += " (idApp: " + idApp + ")";
         
         str += " (idAppProject: " + idAppProject + ")";
@@ -149,15 +116,11 @@ import io.swagger.client.model.QualityReaderServiceModel;
         
         str += " (nbTotalTask: " + nbTotalTask + ")";
         
-        str += " (qualities: " + qualities + ")";
-        
         str += " (qualityName: " + qualityName + ")";
         
         str += " (questionOptions: " + questionOptions + ")";
         
         str += " (title: " + title + ")";
-        
-        str += " (titleQuestionOptions: " + titleQuestionOptions + ")";
         
         str += " (urlNotification: " + urlNotification + ")";
         
